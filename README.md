@@ -1,4 +1,4 @@
-The web app will return a DataFrame converted to html that provides all the relevant rows depending on what is searched.
+The web app will return a DataFrame converted to dict that provides all the relevant rows depending on what is searched.
 Search Params: invoice_type_code: 807-808 and cat_id: 1-12
 
 Technologies:
