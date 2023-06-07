@@ -2,7 +2,7 @@ The web app will return a DataFrame converted to dict that provides all the rele
 Search Params: invoice_type_code: 807-808 and cat_id: 1-12
 
 Technologies:
-The technologies that were used are FastAPI as the framework, and Pandas to handle the data and to allow me to simply load the csv into memory and query it from there. I understand that this is not very applicable in a large scale situation, but for this size it's perfectly fine. I used FastAPI because I heard good things about it a while ago and wanted to try it out over my usual, Flask.
+The technologies that were used are FastAPI as the framework, and Pandas to handle the data and to allow me to simply load the csv into memory and query it from there. I understand that this is not very applicable in a large scale situation, but for this size it's perfectly fine. I used FastAPI because I heard good things about it a while ago and wanted to try it out over my usual, Flask. Using FastAPI's /docs funtionality allowed me to not use postman which was a nice benefit.
 
 Challenges:
 The main thing that I ran into was the lack of time that I had to complete this, if there was more time then I would have used a database and done a frontend in React rather than just using pandas to convert the dataframe to html.
