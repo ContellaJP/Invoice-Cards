@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category ID</title>
+    <h1>Results for the search of Category ID: {{ cat_id }}</h1>
+</head>
+
+<head>
+    <title>Invoice Data</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 5px;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1>Invoice Data</h1>
+    <div class="grid-container">
+        {% for invoice in invoices %}
+        <div class="card">
+            <p>Invoice Type: {{ invoice['ns3:InvoiceTypeCode'] }} - {{ invoice['ns3:InvoiceTypeDescription'] }}</p>
+            <p>Line Item Code: {{ invoice['ns3:CategoryID'] }}.{{ invoice['ns3:SubCategoryID'] }}</p>
+            <p>Line Item Description: {{ invoice['ns3:CategoryDescription'] }} - {{ invoice['ns3:SubCategoryDescription'] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
